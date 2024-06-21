@@ -12,6 +12,11 @@ import {
   Login,
   Profile,
   Register,
+  AboutUs,
+  Channels,
+  Anchors,
+  ContactUs,
+  ShowName,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -35,6 +40,26 @@ const router = createBrowserRouter([
       {
         path: "/user/user-profile",
         element: <Profile />,
+      },
+      {
+        path: "/about-us",
+        element: <AboutUs />,
+      },
+      {
+        path: "/channels",
+        element: <Channels />,
+      },
+      {
+        path: "/anchors",
+        element: <Anchors />,
+      },
+      {
+        path: "/show-name",
+        element: <ShowName />,
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />,
       },
     ],
   },
