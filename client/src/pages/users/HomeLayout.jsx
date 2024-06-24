@@ -1,6 +1,6 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Header, Footer, Container } from "../components/index";
+import { Header, Footer, Container } from "../../components";
 
 const HomeLayout = () => {
   return (

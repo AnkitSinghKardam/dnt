@@ -5,7 +5,6 @@ import "./index.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import {
   Admin,
-  DashboardLayout,
   Error,
   HomeLayout,
   Landing,
@@ -17,6 +16,13 @@ import {
   Anchors,
   ContactUs,
   ShowName,
+  AddChannal,
+  AddShow,
+  AddAnchor,
+  AddDailyNews,
+  AddEmployee,
+  DisplayDailyNews,
+  Permissions,
 } from "./pages";
 
 const router = createBrowserRouter([
@@ -32,10 +38,6 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
-      },
-      {
-        path: "/user/user-dashboard",
-        element: <DashboardLayout />,
       },
       {
         path: "/user/user-profile",
@@ -64,12 +66,40 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/admin",
+    path: "/admin/",
     element: <Admin />,
     children: [
       {
         path: "create-user",
         element: <Register />,
+      },
+      {
+        path: "news-channel",
+        element: <AddChannal />,
+      },
+      {
+        path: "show-name",
+        element: <AddShow />,
+      },
+      {
+        path: "anchor-details",
+        element: <AddAnchor />,
+      },
+      {
+        path: "add-daily-news",
+        element: <AddDailyNews />,
+      },
+      {
+        path: "display-daily-news",
+        element: <DisplayDailyNews />,
+      },
+      {
+        path: "employee",
+        element: <AddEmployee />,
+      },
+      {
+        path: "permissions",
+        element: <Permissions />,
       },
     ],
   },
